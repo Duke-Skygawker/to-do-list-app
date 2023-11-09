@@ -1,0 +1,73 @@
+:root {
+  --Background-dark: hsl(198, 44, 11);
+  --Background-light: hsl(195, 35, 19);
+  --Highlight-dark: hsl(198, 39, 28);
+  --Highlight-light: hsl(187, 37, 83);
+  --Text: hsl(182, 82, 93);
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* RESET END */
+/* Custom Styles */
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main-div {
+  width: 90%;
+  min-height: 100vh;
+  margin: auto;
+}
