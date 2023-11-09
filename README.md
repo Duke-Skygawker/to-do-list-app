@@ -14,3 +14,8 @@ with focus on
 - CSS
 - HTML
 - VSS Code
+
+### Learnings?!
+
+- accesibility adds a lot of text in the html file, huh?
+- learned how to use devtools to display realistic phone sizing
