@@ -3,6 +3,8 @@ $Background-light: hsl(195, 35%, 19%);
 $Highlight-dark: hsl(198, 39%, 28%);
 $Highlight-light: hsl(187, 37%, 83%);
 $Text: hsl(182, 82%, 93%);
+$add-button-color: #4caf50;
+$clear-button-color: #9f6060;
 
 @mixin mq($size) {
   @media only screen and (min-width: $size) {
@@ -55,4 +57,30 @@ section {
   margin: 1em auto;
   border: 1px solid $Highlight-light;
   border-radius: 10px;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+.itemEntryForm {
+  display: flex;
+}
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listContainer {
+  min-height: 15rem;
+  padding: 20px;
 }

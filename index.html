@@ -3,14 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css" />
     <title>To-do list app</title>
   </head>
   <body>
     <main>
       <section class="newItemEntry">
-        <form id="itemEntryForm" action="">
-          <label for="newItem"> Enter a new to do item</label>
+        <form class="itemEntryForm" id="itemEntryForm" action="">
+          <label class="sr-only" for="newItem"> Enter a new to do item</label>
           <input
             id="newItem"
             type="text"
