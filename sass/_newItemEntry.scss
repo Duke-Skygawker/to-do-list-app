@@ -1,0 +1,46 @@
+.newItemEntry {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  form {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+  input[type="text"] {
+    width: 80%;
+    font-size: 1.25rem;
+    border: 2px solid $Highlight-light;
+    border-radius: 10px;
+    padding: 0.75rem;
+    outline: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="text"]:hover {
+    box-shadow: 4px 2px 3px $Highlight-light;
+  }
+  button {
+    font-size: 1.25rem;
+    background-color: $add-button-color;
+    padding: 0.75rem;
+    @include mq(768) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.itemEntryForm input {
+  margin-right: 10px;
+}
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listContainer {
+  min-height: 15rem;
+  padding: 20px;
+}
